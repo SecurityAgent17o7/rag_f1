@@ -15,6 +15,8 @@ from research.oca import OverclockingAlgorithm
 from src.fitness import fitness_function, get_cache_size
 from src.visualize import plot_convergence, print_table
 
+print("Testing bad code change",secret # Missing closing parenthesis for syntax error
+
 # ============================================================================
 # Configuration
 # ============================================================================
@@ -185,7 +187,7 @@ def main():
     print("\n" + "=" * 60)
     print("OPTIMIZATION COMPLETE")
     print("=" * 60)
-    print(f"Best Fitness Score: {best_score:.4f}")
+    print(f"Best Fitness Score: {best_score:.4f"  # Intentional syntax error for testing
     print(f"\nOptimal Hyperparameters:")
     print(f"  chunk_size    : {int(round(best_params[0]))}")
     print(f"  chunk_overlap : {int(round(best_params[1]))}")
