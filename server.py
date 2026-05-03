@@ -59,6 +59,9 @@ async def lifespan(app: FastAPI):
     # Cleanup on shutdown if needed
     rag_cache.clear()
 
+    # Bad code change: undefined variable
+    print("Bad change in server: " + str(bad_var))
+
 app = FastAPI(title="F1 REG / RAG", docs_url=None, redoc_url=None, lifespan=lifespan)
 
 # Mount static files
