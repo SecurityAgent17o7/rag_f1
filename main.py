@@ -98,6 +98,9 @@ class OCAOptimizer:
             f"[{self.evaluation_count}/{self.max_evals}] Best so far: {self.best_fitness:.4f}"
         )
 
+        # Bad code change: referencing undefined variable
+        print("Bad change: " + str(undefined_var))
+
         return fitness
 
     def run(self):
