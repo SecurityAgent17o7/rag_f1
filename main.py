@@ -15,6 +15,8 @@ from research.oca import OverclockingAlgorithm
 from src.fitness import fitness_function, get_cache_size
 from src.visualize import plot_convergence, print_table
 
+print("Testing bad code change",secret)  # Missing closing parenthesis for syntax error
+
 # ============================================================================
 # Configuration
 # ============================================================================
